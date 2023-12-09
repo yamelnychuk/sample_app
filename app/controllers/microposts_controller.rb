@@ -18,6 +18,11 @@ class MicropostsController < ApplicationController
     redirect_to root_url
   end
 
+  def ok_func
+    @micropost.destroy
+    redirect_to root_url
+  end
+
   private
 
     def micropost_params
